@@ -1,10 +1,6 @@
 # My .dotfiles
 
----
-
 Nothing special, just a few dotfiles, and a couple scripts to keep them company.
-
----
 
 ## Install
 
