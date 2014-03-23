@@ -1,20 +1,38 @@
 #!/bin/bash
 
-echo "Removing .bash_profile backups..."
-rm ~/.bash_profile_backup_*
-echo "Done."
+echo "Running cleanup script"
 echo
 
-echo "Removing .bashrc backups..."
-rm ~/.bashrc_backup_*
-echo "Done."
-echo
+if [ -h ~/.bash_profile_backup* ]
+  then
+    echo "Removing ~/.bash_profile backup file(s)..."
+    rm -f ~/.bash_profile_backup*
+    echo "Done."
+    echo
+fi
 
-echo "Removing .profile backups..."
-rm ~/.profile_backup_*
-echo "Done."
-echo
+if [ -h ~/.bashrc_backup* ]
+  then
+    echo "Removing ~/.bashrc backup file(s)..."
+    rm -f ~/.bashrc_backup*
+    echo "Done."
+    echo
+fi
 
-echo "Removing z.sh backups..."
-rm ~/z.sh_backup_*
-echo "Done."
+if [ -h ~/.profile_backup* ]
+  then
+    echo "Removing ~/.profile backup file(s)..."
+    rm -f ~/.profile_backup*
+    echo "Done."
+    echo
+fi
+
+if [ -h ~/z.sh_backup* ]
+  then
+    echo "Removing ~/z.sh backup file(s)..."
+    rm -f ~/z.sh_backup*
+    echo "Done."
+    echo
+fi
+
+echo "Done and done."
