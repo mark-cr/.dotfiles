@@ -50,6 +50,22 @@ echo
 echo
 
 
+# ~/.vimrc
+if [ -e ~/.vimrc ]
+	then
+		echo "Backing up ~/.vimrc..."
+		mv ~/.vimrc ~/.vimrc_backup_$ts
+		echo "Done."
+		echo
+fi
+
+echo "Linking ~/.vimrc..."
+ln -s ~/.dotfiles/.vimrc ~/.vimrc
+echo "Done."
+echo
+echo
+
+
 # ~/z.sh
 if [ -e ~/z.sh ]
   then

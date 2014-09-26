@@ -15,6 +15,11 @@ rm ~/.profile_backup_*
 echo "Done."
 echo
 
+echo "Removing .vimrc backups..."
+rm ~/.vimrc_backup_*
+echo "Done."
+echo
+
 echo "Removing z.sh backups..."
 rm ~/z.sh_backup_*
 echo "Done."
