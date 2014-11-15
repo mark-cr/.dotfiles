@@ -3,6 +3,11 @@
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
 alias s='open -a "Sublime Text 3"'
+alias ss='open -g -a "Sublime Text 3"'
+
+# Open specified files in Atom
+# "a ." will open the current directory in Atom
+alias a='open -a "Atom"'
 
 # Color LS
 colorflag="-G"
@@ -39,6 +44,7 @@ alias gp='git push'
 alias gpl='git pull'
 alias gco='git checkout'
 alias glg='git lg'
+alias gh='cd $(git rev-parse --show-toplevel)'
 
 ### Prompt Colors
 # Modified version of @gf3’s Sexy Bash Prompt
@@ -123,3 +129,6 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 # Load RVM into a shell session as a function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Add ~/Scripts to path
+export PATH=$PATH:~/Scripts
