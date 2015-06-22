@@ -1,5 +1,7 @@
 ### Aliases
 
+function a() { open -a "Atom" "$@" ;}
+
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
 alias s='open -a "Sublime Text 3"'
