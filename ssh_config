@@ -1,0 +1,84 @@
+Host *
+  ServerAliveInterval 60
+  ForwardAgent yes
+
+
+
+# W00X
+Host w3
+  HostName w003.clickrain.net
+Host w4
+  HostName w004.clickrain.net
+
+
+Host 192.168.33.* *.local.dev local*.dev
+  Port 2222
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+  User root
+  LogLevel ERROR
+
+Host devbox
+  HostName 127.0.0.1
+  User vagrant
+  Port 2200
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile ~/Boxen/devbox-4/.vagrant/machines/web/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  ForwardAgent yes
+
+Host lh01
+  HostName 127.0.0.1
+  User hub
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile ~/Projects/CHXX-vagrant/.vagrant/machines/lh01/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  ForwardAgent yes
+
+Host maelstrom
+  HostName 192.168.1.40
+  Port 22
+  User mark
+  IdentityFile ~/.ssh/id_rsa
+
+Host ch02b
+  HostName 104.131.55.42
+  Port 22
+  User mark
+  IdentityFile ~/.ssh/id_rsa
+
+Host sh01
+  HostName sh01.clickrain.net
+  Port 8923
+
+Host ch01
+  HostName ch01.clickrain.net
+
+Host ch02
+  HostName 166.78.185.178
+  User mark
+
+Host zeus
+  HostName 207.109.170.12
+  Port 4894
+  User mark
+  IdentityFile ~/.ssh/id_rsa_zeus
+
+Host wazeus
+  HostName 207.109.170.12
+  Port 4894
+  User willart
+  IdentityFile ~/.ssh/id_rsa_zeus
+
+Host willart01
+  HostName 107.170.142.73
+  Port 21212
+  User mark
+  IdentityFile ~/.ssh/id_rsa

@@ -43,4 +43,12 @@ if [ -h ~/z.sh_backup* ]
     echo
 fi
 
+if [ -h ~/.ssh/config_backup* ]
+  then
+    echo "Removing ~/.ssh/config backup file(s)..."
+    rm -f ~/.ssh/config_backup*
+    echo "Done."
+    echo
+fi
+
 echo "Done and done."

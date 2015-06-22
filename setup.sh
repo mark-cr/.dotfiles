@@ -78,3 +78,19 @@ fi
 echo "Linking ~/z.sh..."
 ln -s ~/.dotfiles/z.sh ~/z.sh
 echo "Done."
+echo
+echo
+
+
+# ~/.ssh/config
+if [ -e ~/.ssh/config ]
+  then
+    echo "Backing up ~/.ssh/config..."
+    mv ~/.ssh/config ~/.ssh/config_backup_$ts
+    echo "Done."
+    echo
+fi
+
+echo "Linking ~/.ssh/config..."
+ln -s ~/.dotfiles/ssh_config ~/.ssh/config
+echo "Done."
