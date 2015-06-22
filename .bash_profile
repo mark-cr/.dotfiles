@@ -130,5 +130,12 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 # Load RVM into a shell session as a function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# Add PHP to path
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
 # Add ~/Scripts to path
 export PATH=$PATH:~/Scripts
+export PATH=$PATH:~/Scripts/nimbus-tools
+
+# Fekkin Ruby
+export NOKOGIRI_USE_SYSTEM_LIBRARIES=1
