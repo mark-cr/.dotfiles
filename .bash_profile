@@ -4,8 +4,8 @@
 
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
-alias s='open -a "Sublime Text 3"'
-alias ss='open -g -a "Sublime Text 3"'
+alias s='open -a "Sublime Text"'
+alias ss='open -g -a "Sublime Text"'
 
 # Open specified files in Atom
 # "a ." will open the current directory in Atom
@@ -133,7 +133,7 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Add PHP to path
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+# export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 # Add ~/Scripts to path
 export PATH=$PATH:~/Scripts
