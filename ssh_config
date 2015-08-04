@@ -25,7 +25,7 @@ Host devbox
   UserKnownHostsFile /dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
-  IdentityFile ~/Boxen/devbox-4/.vagrant/machines/web/virtualbox/private_key
+  IdentityFile ~/Devbox/.vagrant/machines/devbox/virtualbox/private_key
   IdentitiesOnly yes
   LogLevel FATAL
   ForwardAgent yes
